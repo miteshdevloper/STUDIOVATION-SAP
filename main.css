@@ -45,9 +45,6 @@ a {
     gap: 10px;
 }
 
-ul {
-    margin-left: 190px;
-}
 
 .logo h3 {
     font-size: 40px;
@@ -224,4 +221,122 @@ ul {
       padding: 20px;
     }
   }
-    
+  @media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-list {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .top-list li {
+        margin-left: 20px;
+    }
+
+    .logo h3 {
+        font-size: 30px;
+    }
+
+    #Page1 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .left img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .project-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .project-details p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .right {
+        width: 100%;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .top-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-list li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .top-list {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .top-list li {
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+    .logo h3 {
+        font-size: 28px;
+    }
+
+    #Page1 {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .left img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .project-card img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+
+    .project-details {
+        text-align: center;
+    }
+}
