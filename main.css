@@ -356,3 +356,6 @@ a {
         width: 100vw;
     }
 }
+i {
+    display: none;
+}
