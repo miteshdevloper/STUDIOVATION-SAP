@@ -224,7 +224,8 @@ a {
 
     .top-list {
         width: 100%;
-        flex-direction: column;
+        display: none;
+        flex-direction: row;
     }
 
     .top-list li {
@@ -264,6 +265,9 @@ a {
         align-items: center;
         justify-content: space-evenly;
         width: 100vw;
+    }
+    a{
+        padding: 0px 10px 0px 10px;
     }
 }
 
