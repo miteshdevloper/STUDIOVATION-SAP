@@ -257,11 +257,14 @@ h3{
     }
 
     .swara, .Anahita, .paridhi {
-        width: 80%;
+        width: 30%;
         height: 20vh;
-        margin: 10px 0;
+        margin: 0;
     }
-
+    .paridhi{
+        margin-right: -200px;
+        height: 100px;
+    }
     .founders-image {
         width: 100%;
     }
@@ -291,7 +294,7 @@ h3{
     }
 
     .swara, .Anahita, .paridhi {
-        height: 15vh;
+        height: 30vh;
         font-size: 14px;
     }
 
@@ -332,6 +335,10 @@ h3{
     }
 }
 @media (max-width: 768px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
     .top-list {
         display: flex;
         flex-direction: column;
@@ -339,17 +346,34 @@ h3{
         justify-content: center;
         width: 100%; /* Prevent overflow by making the ul full-width */
         padding: 0; /* Remove extra padding */
+        display: none;
+        flex-direction: row;
         margin: 0; /* Remove margin that might cause overflow */
     }
-
+    .paridhi{
+        width: 30%;
+        margin-right: -248px;
+    }
     .top-list li {
         margin-left: 0; /* Remove any left margin that might cause overflow */
         margin-bottom: 10px; /* Space between items */
     }
-
+    .swara{
+        margin-right: 223px;
+    }
     ul {
         padding: 0;
         margin: 0;
         width: 100%; /* Ensure the list doesn't overflow horizontally */
     }
+    #Menue{
+        display: flex;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100vw;
+    }
+
 }
