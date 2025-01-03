@@ -121,12 +121,26 @@ a {
 
 /* Responsive for mobile screens */
 @media (max-width: 768px) {
+    #Page1{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+@media (max-width: 768px) {
     #Page1 {
+        display: flex;
         flex-direction: column;
     }
 
     .left, .right {
         width: 100%;
+    }
+
+    .top-list {
+        flex-direction: column;
+        gap: 10px;
+        display: hidden;
     }
 }
 
@@ -202,59 +216,140 @@ h3{
     transform: translateX(-50%);
     transition: all 0.3s ease-in-out; /* Smooth transition */
 }
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Responsive for tablets */
+@media (max-width: 1024px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    .top-list {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .top-list li {
+        margin-left: 20px;
+    }
+
+    .founders-image {
+        width: 90%;
+    }
 }
 
-html, main, body {
-    width: 100vw;
-    height: 100%;
+/* Responsive for mobile screens */
+@media (max-width: 768px) {
+    #Page1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .top-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .swara, .Anahita, .paridhi {
+        width: 80%;
+        height: 20vh;
+        margin: 10px 0;
+    }
+
+    .founders-image {
+        width: 100%;
+    }
+
+    .left h1 {
+        font-size: 36px;
+    }
+
+    .left p {
+        font-size: 16px;
+    }
 }
 
-body {
-    overflow-x: hidden;
-    font-family: "Poppins", sans-serif;
-}
+/* Responsive for very small devices */
+@media (max-width: 480px) {
+    .logo h3 {
+        font-size: 24px;
+        text-align: center;
+    }
 
-nav {
-    width: 100vw;
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #FFFFFF;
-}
+    .left h1 {
+        font-size: 28px;
+    }
 
-.top-list {
-    width: 50vw;
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: space-evenly;
-    z-index: 3;
-}
+    .left p {
+        font-size: 14px;
+    }
 
-.top-list li {
-    margin-left: 100px;
-    z-index: 3;
-}
+    .swara, .Anahita, .paridhi {
+        height: 15vh;
+        font-size: 14px;
+    }
 
-a {
-    color: #000;
-    text-decoration: none;
-    padding: 10px;
-    gap: 10px;
-}
+    .founders-image {
+        width: 90%;
+        margin-top: 20px;
+    }
 
-ul {
-    margin-left: 190px;
-}
+    nav {
+        flex-direction: column;
+    }
 
-.logo h3 {
-    font-size: 40px;
-    font-family: "Edu AU VIC WA NT Pre", cursive;
-    z-index: 3;
+    .top-list {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .top-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%; /* Ensure the list takes up full width */
+    }
+
+    .top-list li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        width: 100%; /* Prevent overflow by making the ul full-width */
+        padding: 0; /* Remove any extra padding */
+        margin: 0; /* Remove margin that might cause overflow */
+    }
+}
+@media (max-width: 768px) {
+    .top-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%; /* Prevent overflow by making the ul full-width */
+        padding: 0; /* Remove extra padding */
+        margin: 0; /* Remove margin that might cause overflow */
+    }
+
+    .top-list li {
+        margin-left: 0; /* Remove any left margin that might cause overflow */
+        margin-bottom: 10px; /* Space between items */
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        width: 100%; /* Ensure the list doesn't overflow horizontally */
+    }
 }
