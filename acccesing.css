@@ -256,6 +256,15 @@ a {
     #register::before{
         content: 'Or';
     }
+    #Menue{
+        display: flex;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100vw;
+    }
 }
 
 @media (max-width: 480px) {
