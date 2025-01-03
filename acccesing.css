@@ -12,7 +12,9 @@ html, body, main {
     font-family: 'Arial', sans-serif;
     background-color: #FDFDFD;
 }
-
+i {
+    display: none;
+}
 main {
     display: flex;
     align-items: center;
